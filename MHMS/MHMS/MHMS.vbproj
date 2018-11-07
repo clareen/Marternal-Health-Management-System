@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2B91AF9-B84D-4764-83FE-40E579D8447C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MHMS.My.MyApplication</StartupObject>
+    <RootNamespace>MHMS</RootNamespace>
+    <AssemblyName>MHMS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MHMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MHMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NHCPMS\NHCPMS\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.Designer.vb">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminal.Designer.vb">
+      <DependentUpon>Adminal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Adminal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator%27sControlPannel.Designer.vb">
+      <DependentUpon>Administrator%27sControlPannel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator%27sControlPannel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.vb">
+      <DependentUpon>AdminLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baby.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>baby.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cb.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cb.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.vb">
+      <DependentUpon>ChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildBirth.Designer.vb">
+      <DependentUpon>ChildBirth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildBirth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildBirthDetails.Designer.vb">
+      <DependentUpon>ChildBirthDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChildBirthDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="directorlog.Designer.vb">
+      <DependentUpon>directorlog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="directorlog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emp.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>emp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="employeesdata.Designer.vb">
+      <DependentUpon>employeesdata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="employeesdata.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginDetails.Designer.vb">
+      <DependentUpon>frmLoginDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPasswordRecovery.Designer.vb">
+      <DependentUpon>frmPasswordRecovery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPasswordRecovery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSystemInfo.Designer.vb">
+      <DependentUpon>frmSystemInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSystemInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HealthHistory.Designer.vb">
+      <DependentUpon>HealthHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HealthHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Healthworkers.Designer.vb">
+      <DependentUpon>Healthworkers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Healthworkers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="his.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>his.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="immuni.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>immuni.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Immunization.Designer.vb">
+      <DependentUpon>Immunization.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Immunization.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterMortality.Designer.vb">
+      <DependentUpon>MaterMortality.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaterMortality.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maternal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>maternal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MedicalDirector%27sAccess.Designer.vb">
+      <DependentUpon>MedicalDirector%27sAccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalDirector%27sAccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalDirector.Designer.vb">
+      <DependentUpon>MedicalDirector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalDirector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MidWife.Designer.vb">
+      <DependentUpon>MidWife.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MidWife.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mortality.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mortality.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="mother.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mother.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MotherDetails.Designer.vb">
+      <DependentUpon>MotherDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MotherDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PrenatalCare.Designer.vb">
+      <DependentUpon>PrenatalCare.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrenatalCare.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sister.Designer.vb">
+      <DependentUpon>Sister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SisterLogin.Designer.vb">
+      <DependentUpon>SisterLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SisterLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wife.Designer.vb">
+      <DependentUpon>Wife.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wife.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminal.resx">
+      <DependentUpon>Adminal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator%27sControlPannel.resx">
+      <DependentUpon>Administrator%27sControlPannel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baby.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>baby.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cb.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cb.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildBirth.resx">
+      <DependentUpon>ChildBirth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildBirthDetails.resx">
+      <DependentUpon>ChildBirthDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="directorlog.resx">
+      <DependentUpon>directorlog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>emp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeesdata.resx">
+      <DependentUpon>employeesdata.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginDetails.resx">
+      <DependentUpon>frmLoginDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPasswordRecovery.resx">
+      <DependentUpon>frmPasswordRecovery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSystemInfo.resx">
+      <DependentUpon>frmSystemInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HealthHistory.resx">
+      <DependentUpon>HealthHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Healthworkers.resx">
+      <DependentUpon>Healthworkers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="his.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>his.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="immuni.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>immuni.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Immunization.resx">
+      <DependentUpon>Immunization.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterMortality.resx">
+      <DependentUpon>MaterMortality.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maternal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>maternal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalDirector%27sAccess.resx">
+      <DependentUpon>MedicalDirector%27sAccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalDirector.resx">
+      <DependentUpon>MedicalDirector.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MidWife.resx">
+      <DependentUpon>MidWife.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mortality.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>mortality.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mother.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>mother.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MotherDetails.resx">
+      <DependentUpon>MotherDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrenatalCare.resx">
+      <DependentUpon>PrenatalCare.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sister.resx">
+      <DependentUpon>Sister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SisterLogin.resx">
+      <DependentUpon>SisterLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wife.resx">
+      <DependentUpon>Wife.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
